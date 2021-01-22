@@ -7,7 +7,6 @@ run:
    steps:
    - uses: actions/checkout@v2
    - name: cml_run
-       env:
        repo_token: ${{ secrets.GITHUB_TOKEN }}
        run: |
        pip install -r requirements.txt
